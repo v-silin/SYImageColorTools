@@ -49,7 +49,7 @@ SYPixel SYImageGetPixelValue(const uint8_t *data, SYImageInfo info, NSUInteger x
         {
             pixel.r = (pixel.a == 0 ? 0 : pixel.r / pixel.a);
             pixel.g = (pixel.a == 0 ? 0 : pixel.g / pixel.a);
-            pixel.g = (pixel.a == 0 ? 0 : pixel.b / pixel.a);
+            pixel.b = (pixel.a == 0 ? 0 : pixel.b / pixel.a);
         }
     }
     
