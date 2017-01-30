@@ -40,9 +40,9 @@ SYPixel SYImageGetPixelValue(const uint8_t *data, SYImageInfo info, NSUInteger x
         }
         else
         {
-            pixel.r = (CGFloat)data[pixelInfo + indexDelta + 2] / 255.f;
+            pixel.r = (CGFloat)data[pixelInfo + indexDelta + 0] / 255.f;
             pixel.g = (CGFloat)data[pixelInfo + indexDelta + 1] / 255.f;
-            pixel.b = (CGFloat)data[pixelInfo + indexDelta + 0] / 255.f;
+            pixel.b = (CGFloat)data[pixelInfo + indexDelta + 2] / 255.f;
         }
         
         if(info.alphaPremultiplied)
