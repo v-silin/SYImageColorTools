@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES' }
   s.ios.deployment_target = '5.0'
-  s.watchos.deployment_target = '3.0'
   s.source_files = 'Classes/*.{h,m}'
 
   s.subspec 'GPUImage' do |ss|
